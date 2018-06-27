@@ -109,3 +109,4 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/web,windows,eclipse
+/build/

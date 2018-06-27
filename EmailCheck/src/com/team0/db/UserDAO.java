@@ -94,10 +94,10 @@ public class UserDAO {
 			PreparedStatement pstmt = db.prepareStatement(sql);
 			pstmt.setString(1, id);
 			
-			int ret = 3;	// id 가 없으면 3
+			int ret = 0;	// id 가 없으면 3
 			ResultSet rs = pstmt.executeQuery();
 			if(rs.next()) {
-				ret = 2;	// id 가 있으면 2
+				ret = 1;	// id 가 있으면 2
 			}
 			db.close();
 			return ret;
